@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Enter Your Name Please"
+        android:layout_centerVertical="false"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:id="@+id/editname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="@string/name"
+        android:layout_below="@+id/textview"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:id="@+id/textpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Enter Password"
+        android:layout_below="@+id/editname"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:id="@+id/editpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_below="@+id/textpass"
+        android:password="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn"
+        android:onClick="showNextpage"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/editpass"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnRes"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/btnLogin"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnReg"
+        android:layout_marginEnd=""
+        android:onClick="showNextpage"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/btnReset"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

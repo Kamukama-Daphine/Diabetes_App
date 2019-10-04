@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">kamfred</string>
+    <string name="btn">LOGIN</string>
+    <string name="btnRes">Forgot Password</string>
+    <string name="name"></string>
+    <string name="btnReg">Register Now</string>
+</resources>
